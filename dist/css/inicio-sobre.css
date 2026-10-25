@@ -1,0 +1,86 @@
+/* Início e sobre mim. */
+
+.secao-inicio,
+.secao-sobre {
+  padding: clamp(20px, 4vw, 48px);
+  background: var(--cor-superficie);
+  color: var(--cor-texto);
+  border: var(--borda-padrao);
+  box-shadow: 8px 8px 0 var(--cor-texto);
+}
+
+.secao-sobre {
+  margin-top: 60px;
+}
+
+.apresentacao-inicial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: clamp(288px, 45vw, 350px);
+  padding: clamp(24px, 4vw, 40px) clamp(16px, 3vw, 24px);
+  text-align: center;
+}
+
+.apresentacao-inicial h1 {
+  margin: 0 0 20px;
+  font: 700 clamp(36px, 6vw, 64px) var(--fonte-titulo);
+}
+
+.subtitulo-inicial {
+  max-width: 680px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.acoes-iniciais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.conteudo-sobre {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  align-items: center;
+  gap: clamp(24px, 4vw, 48px);
+}
+
+.texto-sobre h2 {
+  margin: 0 0 24px;
+  font: 400 clamp(28px, 4vw, 42px) var(--fonte-titulo);
+}
+
+.texto-sobre p {
+  max-width: 500px;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.texto-sobre p + p {
+  margin-top: 16px;
+}
+
+.fotografia-sobre {
+  width: min(100%, 300px);
+  aspect-ratio: 3 / 4;
+  justify-self: center;
+  overflow: hidden;
+  background: var(--cor-superficie);
+  border: var(--borda-padrao);
+  box-shadow: 6px 6px 0 var(--cor-fundo);
+}
+
+.fotografia-sobre img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+

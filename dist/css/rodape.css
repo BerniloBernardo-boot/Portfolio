@@ -1,0 +1,144 @@
+/* Rodapé e contacto. */
+
+.rodape-site {
+  width: min(92%, 1100px);
+  margin: 90px auto 30px;
+  color: var(--cor-texto);
+}
+
+.janela-rodape {
+  background: var(--cor-superficie);
+  border: var(--borda-padrao);
+  box-shadow: 5px 5px 0 var(--cor-texto);
+}
+
+.barra-titulo-rodape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: var(--cor-texto);
+  color: var(--cor-superficie);
+  font: 700 14px var(--fonte-tecnica);
+}
+
+.controlos-rodape {
+  display: flex;
+  gap: 12px;
+}
+
+.conteudo-rodape {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  gap: clamp(30px, 5vw, 48px);
+  padding: clamp(24px, 4vw, 36px);
+}
+
+.introducao-rodape,
+.formulario-rodape {
+  min-width: 0;
+}
+
+.introducao-rodape h2 {
+  margin: 16px 0;
+  font: 400 clamp(32px, 5vw, 48px) var(--fonte-titulo);
+}
+
+.introducao-rodape p {
+  max-width: 380px;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.redes-rodape {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.redes-rodape a {
+  min-height: 44px;
+  padding: 9px 12px;
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-texto);
+  font-size: 14px;
+  text-decoration: none;
+  transition: background-color var(--duracao-curta) ease, color var(--duracao-curta) ease;
+}
+
+.redes-rodape a:hover,
+.redes-rodape a:focus-visible {
+  background: var(--cor-fundo);
+  color: var(--cor-superficie);
+}
+
+.formulario-rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.formulario-rodape label {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.formulario-rodape input,
+.formulario-rodape textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 12px;
+  background: var(--cor-superficie-suave);
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-texto);
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.formulario-rodape textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.formulario-rodape input:focus,
+.formulario-rodape textarea:focus {
+  outline: 2px solid var(--cor-fundo);
+  outline-offset: 2px;
+}
+
+.formulario-rodape .botao-retro {
+  align-self: flex-start;
+  cursor: pointer;
+}
+
+#estado-contacto {
+  min-height: 18px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.base-rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 18px 24px;
+  border-top: 1px solid var(--cor-borda-suave);
+  font: 12px var(--fonte-tecnica);
+}
+
+.base-rodape a {
+  color: var(--cor-texto);
+}
+
+.barra-estado-rodape {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  background: var(--cor-superficie-suave);
+  border-top: 1px solid var(--cor-texto);
+  font: 12px var(--fonte-tecnica);
+}
