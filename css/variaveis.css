@@ -1,0 +1,17 @@
+:root {
+  --cor-fundo: #688893;
+  --cor-superficie: #F2EFE7;
+  --cor-texto: #263B43;
+  --cor-superficie-suave: #E7E4DA;
+  --cor-borda-suave: #A9BEC1;
+  --fonte-principal: "DM Sans", sans-serif;
+  --fonte-titulo: "DM Serif Display", serif;
+  --fonte-tecnica: "Space Mono", monospace;
+  --borda-padrao: 2px solid var(--cor-texto);
+  --sombra-pequena: 3px 3px 0 var(--cor-texto);
+  --sombra-media: 4px 4px 0 var(--cor-texto);
+  --sombra-grande: 6px 6px 0 var(--cor-texto);
+  --sombra-destaque: 6px 6px 0 var(--cor-fundo);
+  --camada-cabecalho: 10;
+  --duracao-curta: 120ms;
+}

@@ -1,0 +1,100 @@
+/* Apenas ajustes de responsividade. */
+
+@media (max-width: 700px) {
+  .conteudo-rodape {
+    gap: 30px;
+  }
+
+  .base-rodape {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .conteudo-pagina {
+    width: min(92%, calc(100% - 32px));
+    margin-top: clamp(32px, 8vw, 60px);
+  }
+
+  .secao-inicio,
+  .secao-sobre,
+  .secao-competencias,
+  .secao-projectos,
+  .secao-equipa,
+  .secao-servicos {
+    margin-top: 60px;
+    padding: 20px;
+  }
+
+  .secao-inicio {
+    margin-top: 0;
+  }
+
+  .conteudo-sobre {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .fotografia-sobre {
+    max-width: 280px;
+  }
+
+  .introducao-servicos {
+    padding: 20px;
+  }
+
+  .rodape-servicos {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .introducao-equipa {
+    padding: 18px;
+  }
+
+  .grelha-equipa {
+    padding: 12px;
+  }
+
+  .membro-equipa {
+    grid-template-columns: 1fr;
+  }
+
+  .fotografia-equipa {
+    max-width: 220px;
+  }
+}
+
+@media (max-width: 800px) {
+  .conteudo-pagina {
+    margin-top: clamp(32px, 8vw, 60px);
+  }
+
+  section,
+  .rodape-site {
+    scroll-margin-top: 84px;
+  }
+}
+
+.js .cabecalho-site.menu-compacto + .conteudo-pagina {
+  margin-top: clamp(32px, 8vw, 60px);
+}
+
+@media (max-width: 600px) {
+  .secao-competencias {
+    padding: 24px;
+  }
+
+  .item-competencia {
+    min-height: 88px;
+    padding: 10px 5px;
+  }
+}
+
+@media (max-width: 380px) {
+  .secao-competencias {
+    padding: 18px;
+  }
+}
+/* Ajustes para ecrãs pequenos, médios e grandes. */
