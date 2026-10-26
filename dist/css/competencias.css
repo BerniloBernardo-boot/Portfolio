@@ -34,6 +34,10 @@
   gap: 12px;
 }
 
+.grelha-linguagens {
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 100px), 1fr));
+}
+
 .item-competencia {
   display: flex;
   flex-direction: column;

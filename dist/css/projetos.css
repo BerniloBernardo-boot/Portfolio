@@ -16,9 +16,15 @@
 
 .grelha-projectos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   align-items: stretch;
   gap: 22px;
+}
+
+@media (min-width: 1500px) {
+  .grelha-projectos {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
 }
 
 .cartao-projecto {

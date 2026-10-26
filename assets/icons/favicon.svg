@@ -1,6 +1,59 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="B">
-  <rect width="64" height="64" fill="#263B43"/>
-  <rect x="8" y="8" width="48" height="40" fill="#F2EFE7"/>
-  <text x="32" y="42" text-anchor="middle" font-family="Georgia, 'DM Serif Display', serif" font-size="32" fill="#263B43">B</text>
-  <rect x="20" y="54" width="24" height="4" fill="#C78368"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="320" height="320" shape-rendering="crispEdges" role="img" aria-label="Letra B em estilo pixel retro">
+  <defs>
+    <style>
+      :root {
+        --cor-fundo: #688893;
+        --cor-superficie: #F2EFE7;
+        --cor-texto: #263B43;
+        --cor-superficie-suave: #E7E4DA;
+        --cor-borda-suave: #A9BEC1;
+      }
+    </style>
+    <!-- Letra B: grelha 7x9, célula de 24px -->
+    <g id="letra-b">
+      <rect x="76"  y="52"  width="144" height="24"/>
+      <rect x="76"  y="76"  width="48"  height="72"/>
+      <rect x="196" y="76"  width="48"  height="72"/>
+      <rect x="76"  y="148" width="144" height="24"/>
+      <rect x="76"  y="172" width="48"  height="72"/>
+      <rect x="196" y="172" width="48"  height="72"/>
+      <rect x="76"  y="244" width="144" height="24"/>
+    </g>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="320" height="320" fill="#688893"/>
+
+  <!-- Cartão com bordas em degraus (pixel) -->
+  <g fill="#263B43">
+    <rect x="24" y="16" width="272" height="288"/>
+    <rect x="16" y="24" width="288" height="272"/>
+  </g>
+  <g fill="#F2EFE7">
+    <rect x="32" y="24" width="256" height="272"/>
+    <rect x="24" y="32" width="272" height="256"/>
+  </g>
+  <!-- Faixa suave inferior -->
+  <rect x="24" y="272" width="272" height="16" fill="#E7E4DA"/>
+
+  <!-- Sombra pixel -->
+  <use href="#letra-b" x="8" y="8" fill="#A9BEC1"/>
+
+  <!-- Letra -->
+  <use href="#letra-b" fill="#263B43"/>
+
+  <!-- Brilhos pixel dentro da letra -->
+  <g fill="#688893">
+    <rect x="76"  y="52" width="24" height="24"/>
+    <rect x="76"  y="148" width="24" height="24"/>
+    <rect x="76"  y="244" width="24" height="24"/>
+  </g>
+
+  <!-- Cantos decorativos -->
+  <g fill="#A9BEC1">
+    <rect x="40"  y="40" width="8" height="8"/>
+    <rect x="272" y="40" width="8" height="8"/>
+    <rect x="40"  y="264" width="8" height="8"/>
+    <rect x="272" y="264" width="8" height="8"/>
+  </g>
 </svg>
